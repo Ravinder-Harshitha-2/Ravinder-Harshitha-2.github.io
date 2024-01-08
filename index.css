@@ -528,7 +528,7 @@ img {
 }
 
 .display{
-  margin-top: 0;
+  margin-top: -5px;
   margin-left: 3%;
   padding: 10px;
 }
