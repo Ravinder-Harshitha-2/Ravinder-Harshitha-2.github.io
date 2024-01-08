@@ -281,34 +281,6 @@ time {
   opacity: 1;
 }
 
-
-/* General media queries */
-@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #196d22 transparent transparent;
-  }
-}
-
 /* Extra/clip path styles for timeline */
 .timeline-clippy ul li::after {
   width: 40px;
@@ -482,6 +454,34 @@ img {
   margin: 0% 1%;
 }
 
+
+/* General media queries */
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #196d22 transparent transparent;
+  }
+}
+
 /* Media query for small screens */
 @media screen and (max-width: 480px) {
   body {
@@ -491,6 +491,7 @@ img {
 
 .bg{
   width: 100%;
+  height: 95%;
 }
 
 .nav {
@@ -527,6 +528,8 @@ img {
 }
 
 .display{
+  margin-top: 0;
+  margin-left: 3%;
   padding: 10px;
 }
 .name{
@@ -672,6 +675,7 @@ aside img {
 
 .row {
   display: flex;
+  margin-right: 16px;
   flex-direction: column; /* Change flex direction to column */
 }
 
@@ -902,8 +906,8 @@ aside img {
   display: grid;
   grid-row: 2;
   grid-template-columns: 50% 50%; /* Two columns with equal width */
-  grid-gap: 15px; /* Adjust the gap between columns */
-  margin: 15px;
+  grid-gap: 8px; /* Adjust the gap between columns */
+  margin-right: 18px;
 }
 
 /* Additional styling for images (optional) */
@@ -913,7 +917,7 @@ aside img {
 
 .gallery-pic {
   width: 100%;
-  height: 200px; /* Maintain aspect ratio */
+  height: 200px;/* Maintain aspect ratio */
 }
 
 /* Additional styling for images (optional) */

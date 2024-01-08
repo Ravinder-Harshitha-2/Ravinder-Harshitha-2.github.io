@@ -89,7 +89,7 @@ p {
   border: none;
   height: 2px; /* Adjust the thickness of the line */
   background-color: #333; /* Change the color as needed */
-  margin: 60px; /* Adjust the margin above and below the line */
+  margin: 40px; /* Adjust the margin above and below the line */
 }
 
 /* Footer */
