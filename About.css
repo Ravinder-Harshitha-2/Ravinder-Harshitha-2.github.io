@@ -135,12 +135,12 @@ p {
 
 @media screen and (max-width: 480px) {
   body {
-      width: 100%;
-      margin: 0;
+    max-width: 100%;
+    margin: 0;
   }
 
   .bg{
-    width: 100%;
+    max-width: 100%;
   }
   
   .nav {
@@ -152,7 +152,7 @@ p {
   
   .nav img {
     margin-bottom: 6px;
-    width: 100px;
+    max-width: 100px;
     height: 100px;
     order: 1; /* Set the order to 1 to move it above nav ul */
   }
@@ -238,12 +238,12 @@ p {
 
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
 .bg{
-  width: 100%;
+  max-width: 100%;
 }
 
 .nav {
@@ -256,7 +256,7 @@ p {
 .nav img {
   margin-right: 10px;
   margin-bottom: 6px;
-  width: 100px;
+  max-width: 100px;
   height: 100px;
 }
 
@@ -348,8 +348,8 @@ p{
 
 @media screen and (min-width: 1025px) {
   body {
-      width: 100%;
-      margin: 0;
+    max-width: 100%;
+    margin: 0;
   }
 
   h1{

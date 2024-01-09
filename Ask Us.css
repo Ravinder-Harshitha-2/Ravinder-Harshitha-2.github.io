@@ -115,7 +115,7 @@ h3 {
 }
 
 .footer .row1 {
-  width: 100%;
+  max-width: 100%;
   margin: 1% 0%;
   padding: 0.6% 0%;
   color: rgb(255, 255, 255);
@@ -149,12 +149,12 @@ h3 {
 
 @media screen and (max-width: 480px) {
   body {
-      width: 100%;
+    max-width: 100%;
       margin: 0;
   }
 
   .bg{
-    width: 100%;
+    max-width: 100%;
   }
   
   .nav {
@@ -239,12 +239,12 @@ h3 {
 
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
 .bg{
-  width: 100%;
+  max-width: 100%;
 }
 
 .nav {
@@ -348,8 +348,8 @@ input[type=submit] {
 
 @media screen and (min-width: 1025px) {
   body {
-      width: 100%;
-      margin: 0;
+    max-width: 100%;
+    margin: 0;
   }
 
   .container {
@@ -362,7 +362,7 @@ input[type=submit] {
 
   .col-25 {
     width: 100%;
-    float:left;
+    float: left;
     width: 20%;
     margin-top: 6px;
     text-align: center;

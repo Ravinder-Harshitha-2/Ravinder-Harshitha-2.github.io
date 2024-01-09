@@ -128,12 +128,12 @@ li {
 
 @media screen and (max-width: 480px) {
   body {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
   }
 
   .bg{
-    width: 100%;
+    max-width: 100%;
   }
 
   .nav {
@@ -233,12 +233,12 @@ li {
 
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
 .bg{
-  width: 100%;
+  max-width: 100%;
 }
 
 .nav {
@@ -337,7 +337,7 @@ li {
 
 @media screen and (min-width: 1025px) {
   body {
-      width: 100%;
+    max-width: 100%;
       margin: 0;
   }
 
