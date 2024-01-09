@@ -1,26 +1,26 @@
+/* CSS for News and Events page */
+
 * {
   box-sizing: border-box;
 }
 
+/* Set up body and HTML styles */
 body, html {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* The image used as background*/
 .bg {
-  /* The image used */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("AdobeStock_199850553.jpg");
-
-  /* Full height */
   height: 80%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Navigation bar */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +57,7 @@ ul li a {
   margin: auto;
 }
 
+/* CSS for heading and paragraphs */
 h1 {
   font-size: 50px;
   color: #196d22;
@@ -72,7 +73,7 @@ h1 {
   padding: 8px;
 }
 
-/* Create four equal columns that float next to each other */
+/* four equal columns that float next to each other */
 .column {
   float: left;
   width: 25%;
@@ -85,13 +86,22 @@ h1 {
   clear: both;
 }
 
-/* Content */
+/* Content style*/
 .content {
   background-color: white;
   padding: 10px;
 }
 
+/* hyperlink to news articles and its styling*/
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
+a:hover {
+  color: rgb(40, 40, 152);
+}
 
 /* Footer */
 .footer {
@@ -134,30 +144,7 @@ h1 {
   margin: 0% 1%;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:hover {
-  color: rgb(40, 40, 152);
-}
-
-/* Responsive layout - makes a two-column layout instead of four columns 
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}*/
-
+/* Media query up to 480px */
 @media screen and (max-width: 480px) {
   body {
     max-width: 100%;
@@ -168,6 +155,8 @@ a:hover {
     max-width: 100%;
   }
 
+  /* CSS for logo to move it above navigation bar 
+  and nav bar is horizontally placed in a column using flex*/
   .nav {
     display: flex;
     flex-direction: column;
@@ -179,7 +168,7 @@ a:hover {
     margin-bottom: 6px;
     width: 100px;
     height: 100px;
-    order: 1; /* Set the order to 1 to move it above nav ul */
+    order: 1; 
   }
   
   .nav ul {
@@ -188,12 +177,12 @@ a:hover {
     margin: 0;
     display: flex;
     flex-direction: column;
-    order: 2; /* Set the order to 2 to move it below the img */
+    order: 2; 
   }
   
   .nav ul li {
     display: block;
-    margin-right: 5px; /* Adjust margin as needed */
+    margin-right: 5px; 
   }
   
   .nav ul li a {
@@ -201,6 +190,8 @@ a:hover {
     color: white;
   }
 
+  /* CSS to make the news elements appear in a single cloumn */
+  /* makes the two columns stack on top of each other instead of next to each other */
   .main{
     width: 90%;
   }
@@ -213,15 +204,16 @@ a:hover {
     font-size: 17px;
   }
 
+  /* Footer CSS to make them appear in a single cloumn */
   .row1 ul {
     display: grid;
-    grid-template-columns: 1fr; /* Display a single column */
-    padding: 0; /* Remove default padding */
+    grid-template-columns: 1fr; 
+    padding: 0; 
   }
 
   .row1 ul li {
-    text-align: left; /* Center the text inside list items */
-    margin: 10px 0; /* Add spacing between list items */
+    text-align: left; 
+    margin: 10px 0; 
   }
 
   .row1 ul li a{
@@ -230,7 +222,7 @@ a:hover {
 
   .row1 p{
     font-size: 14px;
-    text-align: center; /* Center the text inside list items */
+    text-align: center; 
     margin: 10px;
   }
 
@@ -240,6 +232,7 @@ a:hover {
   }
 }
 
+/* Media query from 481px to 1024px */
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
     max-width: 100%;
@@ -250,6 +243,8 @@ a:hover {
   width: 100%;
 }
 
+/* CSS for logo to move it above navigation bar 
+and nav bar is horizontally placed in a single row */
 .nav {
   text-align:center;
   display: block;
@@ -285,6 +280,8 @@ a:hover {
   color: white;
 }
 
+/* CSS to make the news elements appear in two cloumns */
+/* it makes a two-column layout instead of four columns */
 .main{
   width: 90%;
 }
@@ -299,16 +296,17 @@ a:hover {
   height: 350px;
 }
 
+/* Footer CSS to make them appear in a single row with even spacing */
 .row1 ul {
   justify-content: center;
   display: flex;
-  flex-direction: row; /* Display a single column */
-  padding: 0; /* Remove default padding */
+  flex-direction: row; 
+  padding: 0; 
 }
 
 .row1 ul li {
-  text-align: center; /* Center the text inside list items */
-  margin: 10px 0; /* Add spacing between list items */
+  text-align: center;
+  margin: 10px 0; 
 }
 
 .row1 ul li a{
@@ -317,7 +315,7 @@ a:hover {
 
 .row1 p{
   font-size: 14px;
-  text-align: center; /* Center the text inside list items */
+  text-align: center; 
   margin: 10px;
 }
 
@@ -327,6 +325,8 @@ a:hover {
 }
 }
 
+/* Media query for above 1024px */
+/* Original CSS is effective here with slight changes */
 @media screen and (min-width: 1025px) {
   body {
     max-width: 100%;

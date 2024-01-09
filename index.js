@@ -10,7 +10,7 @@ function myFunction() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-// Reveal Function
+// Reveal Function used in main landing page
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -29,6 +29,8 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+
+// Function for Timeline in main landing page
 (function () {
     "use strict";
 

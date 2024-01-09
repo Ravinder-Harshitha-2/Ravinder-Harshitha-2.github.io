@@ -1,3 +1,5 @@
+/* CSS for main Landing page */
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +11,7 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Background image styling */
+/* The image used as background*/
 .bg {
   background-image: url("daniil-silantev-F6Da4r2x5to-unsplash.jpg");
   height: 90%;
@@ -18,7 +20,7 @@ body, html {
   background-size: cover;
 }
 
-/* Navigation styling */
+/* Navigation bar */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +29,6 @@ nav {
   overflow: auto;
 }
 
-/* Navigation list item styling */
 nav ul li {
   position: relative;
   margin: 0 10px;
@@ -40,14 +41,12 @@ nav ul li {
   text-decoration: none;
 }
 
-/* Navigation link styling */
 nav ul li a {
   text-decoration: solid;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
 
-/* Hover effect on navigation link */
 .nav a:hover {
   color: rgb(191, 191, 191);
 }
@@ -96,7 +95,6 @@ nav ul li a {
   50% {
     top: -2.4em;
   }
-  /* ... other keyframes ... */
 }
 
 /* Article styling */
@@ -169,7 +167,7 @@ h1 {
   margin: 0 auto;
 }
 
-/* Styled horizontal rule styling */
+/* Styled horizontal rule */
 .styled-hr {
   border: none;
   height: 2px;
@@ -177,6 +175,7 @@ h1 {
   margin: 50px;
 }
 
+/* Timeline styling */
 .timeline ul {
   background: #ffffff;
   padding: 50px 0;
@@ -250,9 +249,7 @@ time {
 }
 
 
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/* Effects for timeline */
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
 }
@@ -281,22 +278,19 @@ time {
   opacity: 1;
 }
 
-/* Extra/clip path styles for timeline */
 .timeline-clippy ul li::after {
   width: 40px;
   height: 40px;
   border-radius: 0;
 }
 
-/* ... other clip path styles ... */
 
-/* Heading styling */
+/* Headings styling */
 .heading {
   font-size: 48px;
   margin-bottom: 50px;
 }
 
-/* Main heading styling */
 .main-heading {
   text-align: center;
   font-size: 48px;
@@ -350,7 +344,7 @@ img {
   width: 95%;
 }
 
-/* Button styling */
+/* Button 1 styling */
 .button {
   border: none;
   background-color: green;
@@ -365,7 +359,7 @@ img {
   text-decoration: none;
 }
 
-/* Button span styling */
+/* Button hover styling */
 .button:hover{
   color: #dadada;
 }
@@ -388,6 +382,7 @@ img {
   text-align: center;
 }
 
+/* button 2  styling */
 .button2 {
   border: none;
   background-color: green;
@@ -402,7 +397,7 @@ img {
   text-decoration: none;
 }
 
-/* Button span styling */
+/* Button hover styling */
 .button2:hover{
   color: #dadada;
 }
@@ -415,7 +410,7 @@ img {
   text-align: center;
 }
 
-/* Footer row1 styling */
+/* Footer */
 .footer .row1 {
   width: 100%;
   margin: 1% 0%;
@@ -424,38 +419,33 @@ img {
   font-size: 0.8em;
 }
 
-/* Footer row1 link styling */
 .footer .row1 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 
-/* Footer row1 link hover styling */
 .footer .row1 a:hover {
   color: #bababa;
 }
 
-/* Footer row1 ul styling */
 .footer .row1 ul {
   width: 100%;
 }
 
-/* Footer row1 ul li styling */
 .footer .row1 ul li {
   display: inline-block;
   margin: 0px 30px;
   font-size: 1.2em;
 }
 
-/* Footer row1 link icon styling */
 .footer .row1 a i {
   font-size: 2em;
   margin: 0% 1%;
 }
 
 
-/* General media queries */
+/* Media queries for timeline*/
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
@@ -482,7 +472,7 @@ img {
   }
 }
 
-/* Media query for small screens */
+/* Media query up to 480px */
 @media screen and (max-width: 480px) {
   body {
     max-width: 100%;
@@ -498,6 +488,8 @@ p{
   font-size: 18px;
 }
 
+/* CSS for logo to move it above navigation bar 
+and nav bar is horizontally placed in a column using flex*/
 .nav {
   display: flex;
   flex-direction: column;
@@ -509,7 +501,7 @@ p{
   margin-bottom: 6px;
   width: 100px;
   height: 100px;
-  order: 1; /* Set the order to 1 to move it above nav ul */
+  order: 1; 
 }
 
 .nav ul {
@@ -518,12 +510,12 @@ p{
   margin: 0;
   display: flex;
   flex-direction: column;
-  order: 2; /* Set the order to 2 to move it below the img */
+  order: 2; 
 }
 
 .nav ul li {
   display: block;
-  margin-right: 5px; /* Adjust margin as needed */
+  margin-right: 5px; 
 }
 
 .nav ul li a {
@@ -531,6 +523,7 @@ p{
   color: white;
 }
 
+/* Reducing the font sizes, margins and paddings of elements*/
 .display{
   margin-top: -5px;
   margin-left: 3%;
@@ -546,12 +539,15 @@ article{
   margin: 30px;
 }
 
+/* items displayed in one column with full width */
 .grid-container{
   display: grid;
   grid-row: 1;
   grid-template-columns: 100%;
   order: 1;
 }
+
+/* Style for the grid items*/
 .grid-item {
   margin-top: 10px;
   padding: 10px;
@@ -560,13 +556,14 @@ article{
   line-height: 150%;
 }
 
+/* CSS to center images */
 .centered-image {
   width: 400px;
   display: block;
   margin: 0 auto;
 }
 
-/* Intro section styling */
+/* Reducing the font sizes, margins and paddings */
 .intro {
   background: #196d22;
   color: white;
@@ -574,7 +571,6 @@ article{
   padding: 50px 0;
 }
 
-/* Container styling */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -590,7 +586,7 @@ article{
   margin: 10px;
 }
 
-/* Heading styling */
+/* Headings styling */
 .heading {
   font-size: 35px;
   line-height: 140%;
@@ -599,7 +595,6 @@ article{
   text-align: center;
 }
 
-/* Main heading styling */
 .main-heading {
   text-align: center;
   font-size: 30px;
@@ -612,10 +607,12 @@ article{
   text-transform: uppercase;
 }
 
+/* Reducing the paddings */
 .aside .right-align, .left-align{
   margin: 30px;
 }
 
+/* Right-aligned text styling */
 .right-align {
   margin: 25px;
   padding: 15px;
@@ -637,6 +634,7 @@ aside img {
   padding-bottom: 0;
 }
 
+/* buttons 1 and 2 styling */
 .button {
   float: right;
   border: none;
@@ -666,6 +664,7 @@ aside img {
   text-decoration: none;
 }
 
+/* Gallery styling */
 .gallery{
   text-align: center;
   font-size: 18px;
@@ -677,36 +676,37 @@ aside img {
   text-align: center;
 }
 
+/* items displayed in one column with full width */
 .row {
   display: flex;
   margin-right: 16px;
-  flex-direction: column; /* Change flex direction to column */
+  flex-direction: column; 
 }
 
-/* Column styling */
 .column {
   flex: 33.33%;
   padding: 5px;
 }
 
-/* Additional styling for images (optional) */
+/* Additional styling for images */
 .gallery-pic {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
 }
 
+/* Footer CSS to make them appear in a single cloumn */
 .row1 ul {
   display: grid;
   grid-row: 1;
-  grid-template-columns: 100%; /* Display a single column */
-  padding: 0; /* Remove default padding */
+  grid-template-columns: 100%; 
+  padding: 0; 
   margin-top: 4%;
   margin-bottom: 6%;
 }
 
 .row1 ul li {
-  text-align: left; /* Center the text inside list items */
-  margin: 0; /* Add spacing between list items */
+  text-align: left;
+  margin: 0;
   padding-bottom: 6%;
 }
 
@@ -716,7 +716,7 @@ aside img {
 
 .row1 p{
   font-size: 16px;
-  text-align: center; /* Center the text inside list items */
+  text-align: center; 
   margin: 5%;
 }
 
@@ -726,6 +726,7 @@ aside img {
 }
 }
 
+/* Media query from 481px to 1024px */
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
     max-width: 100%;
@@ -736,6 +737,8 @@ aside img {
   max-width: 100%;
 }
 
+/* CSS for logo to move it above navigation bar 
+and nav bar is horizontally placed in a single row */
 .nav {
   display: flex;
   flex-direction: column;
@@ -766,6 +769,7 @@ aside img {
   color: white;
 }
 
+/* increasing the font sizes, margins and paddings of various elements*/
 .display{
   padding: 10px;
 }
@@ -779,12 +783,15 @@ article{
   margin: 60px;
 }
 
+/* One column with full width */
 .grid-container{
   display: grid;
   grid-row: 1;
   grid-template-columns: 100%;
   order: 1;
 }
+
+/* Style for the grid items*/
 .grid-item {
   margin-top: 10px;
   padding: 10px;
@@ -792,18 +799,20 @@ article{
   font-size: larger;
   line-height: 150%;
 }
+
+/* CSS to format images*/
 .centered-image {
   width: 400px;
   display: block;
   margin: 0 auto;
 }
 
+/* increasing the font sizes, margins and paddings of various elements*/
 .grid-item p{
   margin-left: 60px;
   margin-right: 60px;
 }
 
-/* Container styling */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -819,7 +828,7 @@ article{
   margin: 10px;
 }
 
-/* Heading styling */
+/* Headings styling */
 .heading {
   font-size: 35px;
   line-height: 140%;
@@ -828,7 +837,6 @@ article{
   text-align: center;
 }
 
-/* Main heading styling */
 .main-heading {
   text-align: center;
   font-size: 30px;
@@ -841,10 +849,12 @@ article{
   text-transform: uppercase;
 }
 
+/* increasing the paddings */
 .aside .right-align, .left-align{
   margin: 50px;
 }
 
+/* Right-aligned text styling */
 .right-align {
   margin: 45px;
   padding: 20px;
@@ -866,6 +876,7 @@ aside img {
   padding-bottom: 0;
 }
 
+/* buttons 1 and 2 styling */
 .button {
   float: right;
   border: none;
@@ -895,6 +906,7 @@ aside img {
   text-decoration: none;
 }
 
+/* Gallery styling */
 .gallery{
   text-align: center;
   font-size: 18px;
@@ -906,40 +918,41 @@ aside img {
   text-align: center;
 }
 
+/* items displayed in two columns with equal width */
 .row {
   display: grid;
   grid-row: 2;
-  grid-template-columns: 50% 50%; /* Two columns with equal width */
-  grid-gap: 8px; /* Adjust the gap between columns */
+  grid-template-columns: 50% 50%; 
+  grid-gap: 8px; 
   margin-right: 18px;
 }
 
-/* Additional styling for images (optional) */
 .column {
   padding: 5px;
 }
 
+/* Additional styling for images */
 .gallery-pic {
   width: 100%;
-  height: 200px;/* Maintain aspect ratio */
+  height: 200px;
 }
 
-/* Additional styling for images (optional) */
 .gallery-pic {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
 }
 
+/* Footer CSS to make them appear in a single cloumn */
 .row1 ul {
   justify-content: center;
   display: flex;
-  flex-direction: row; /* Display a single column */
-  padding: 0; /* Remove default padding */
+  flex-direction: row; 
+  padding: 0; 
 }
 
 .row1 ul li {
-  text-align: center; /* Center the text inside list items */
-  margin: 10px 0; /* Add spacing between list items */
+  text-align: center; 
+  margin: 10px 0; 
 }
 
 .row1 ul li a{
@@ -948,7 +961,7 @@ aside img {
 
 .row1 p{
   font-size: 14px;
-  text-align: center; /* Center the text inside list items */
+  text-align: center; 
   margin: 10px;
 }
 
@@ -958,6 +971,8 @@ aside img {
 }
 }
 
+/* Media query for above 1024px */
+/* Original CSS is effective here */
 @media screen and (min-width: 1025px) {
   body {
     max-width: 100%;
