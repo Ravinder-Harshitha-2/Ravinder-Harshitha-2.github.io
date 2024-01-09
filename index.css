@@ -494,6 +494,10 @@ img {
   height: 95%;
 }
 
+p{
+  font-size: 15px;
+}
+
 .nav {
   display: flex;
   flex-direction: column;
